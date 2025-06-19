@@ -41,7 +41,7 @@ nav {
     transition: all 0.3s linear;
 }
 .show-menu {
-    height: 10px;
+    height: 200px;
 }
 .nav-menu a {
     color: gray;
