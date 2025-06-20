@@ -4,19 +4,33 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
         <script
             src="https://kit.fontawesome.com/61636df05d.js"
             crossorigin="anonymous"
         ></script>
 
-        <title>Navbar Menu</title>
+        <title>Ghanem Fourniture Scolaire et Gestion</title>
     </head>
     <body>
         <nav>
             <div class="nav-main">
                 <div class="nav-header">
-                    <img src="./ghanem-logo.png" alt="photo-logo" />
+                    <img src="./img/Ghanem-logo.png" alt="photo-logo" />
                     <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search-container">
+                    <input
+                        type="text"
+                        placeholder="Rechercher..."
+                        class="search-input"
+                    />
+                    <button class="search-button">🔍</button>
                 </div>
                 <ul class="nav-menu">
                     <li>
@@ -37,7 +51,7 @@
         <main>
             <div class="bg-image" id="bg-image"></div>
             <div class="container">
-                <h1>Bienvenue sur notre site</h1>
+                <h1>Bienvenue à notre magasin</h1>
                 <p>
                     je vous propose tout le matériel scolaire nécessaire aux
                     écoliers, collégiens et lycéens demandé par les professeurs.
@@ -74,6 +88,119 @@
                 </p>
             </div>
         </main>
+        <!--<section>
+            <div class="container-articles">
+                <h3>Nos articles</h3>
+
+                <div "container-object">
+                    <a class="link" href="#">
+                        <div class="container-img">
+                            <img
+                                class="todisplay"
+                                alt="vignette-sac-a-dos"
+                                src="img/sac a dos.jpg"
+                                style="display: block"
+                            />
+                        </div>
+                        <h2 class="h2-mea-categories">Fourniture</h2>
+                    </a>
+                </div>
+                <div "container-object">
+                    <a class="link" href="#">
+                        <div class="container-img">
+                            <img
+                                class="todisplay"
+                                alt="vignette-sac-a-dos"
+                                src="img/sac a dos.jpg"
+                                style="display: block"
+                            />
+                        </div>
+                        <h2 class="h2-mea-categories">Extra</h2>
+                    </a>
+                </div>
+                <div "container-object">
+                    <a class="link" href="#">
+                        <div class="container-img">
+                            <img
+                                class="todisplay"
+                                alt="vignette-sac-a-dos"
+                                src="img/sac a dos.jpg"
+                                style="display: block"
+                            />
+                        </div>
+                        <h2 class="h2-mea-categories">outils informatique</h2>
+                    </a>
+                </div>
+                <div "container-object">
+                    <a class="link" href="#">
+                        <div class="container-img">
+                            <img
+                                class="todisplay"
+                                alt="vignette-sac-a-dos"
+                                src="img/sac a dos.jpg"
+                                style="display: block"
+                            />
+                        </div>
+                        <h2 class="h2-mea-categories">Livres</h2>
+                    </a>
+                </div>
+                <div "container-object">
+                    <a class="link" href="#">
+                        <div class="container-img">
+                            <img
+                                class="todisplay"
+                                alt="vignette-sac-a-dos"
+                                src="img/sac a dos.jpg"
+                                style="display: block"
+                            />
+                        </div>
+                        <h2 class="h2-mea-categories">Emballage</h2>
+                    </a>
+                </div>
+            </div>
+        </section> -->
+        <section class="categories">
+            <h2>Nos incontournables pour petits et grands !</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Sacs à dos</h2>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Fournitures</h2>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Livres</h2>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Emballage</h2>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Outils informatique</h2>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="">
+                        <img src="sac-a-dos.jpg" alt="Sac à dos" />
+                        <h2 class="h2-mea-categories">Extra</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,11 +1,12 @@
 body {
-    padding: 0;
+    padding: 5px;
     margin: 0;
     line-height: 2.2;
-    font-family: sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background: #f1f5f8;
     font-size: 0.875rem;
 }
+/* Partie navbar  */
 nav {
     background-color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -17,7 +18,7 @@ nav {
     padding: 1rem;
 }
 .nav-header img {
-    height: 100px;
+    height: 90px;
     width: 80px;
     align-items: center;
 }
@@ -44,7 +45,7 @@ nav {
     height: 200px;
 }
 .nav-menu a {
-    color: gray;
+    color: rgb(76, 73, 73);
     letter-spacing: 0.1rem;
     text-decoration: none;
     display: block;
@@ -78,9 +79,115 @@ nav {
     .nav-menu a {
         padding: 0;
         margin: 0 0.5rem;
+        font-size: 14px;
     }
     .nav-menu a:hover {
         padding: 0;
         background: transparent;
     }
+    .search-container {
+        display: none;
+    }
+}
+
+/* barre de recherche  */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+/* Partie Img Cover  */
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1611758498818-bfdeec6dc3de?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    object-fit: cover;
+    background-position: center;
+    /* pour que l'img ne bouge pas  */
+    background-attachment: fixed;
+}
+.container {
+    font-family: "Inter", sans-serif;
+    margin: 15px;
+    padding: 5px;
+    background: rgba(245, 40, 145, 0.02);
+}
+.container h1 {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+/*  container petite icon avec photo */
+/* .container-articles {
+    height: 155px;
+    transform: translate3d(0px, 0px, 0px);
+}
+.container-img {
+    display: block;
+    width: 50px;
+    height: 20px;
+}
+.sac-dos {
+    width: 136px;
+} */
+.categories {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.categories h2 {
+    /* font-family: "Dancing Script", cursive; */
+    /* ou une autre fonte manuscrite */
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-item {
+    width: 110px;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fdf1ee;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
