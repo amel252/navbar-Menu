@@ -125,6 +125,8 @@ nav {
     background-position: center;
     /* pour que l'img ne bouge pas  */
     background-attachment: fixed;
+    background-size: 130%;
+
 }
 .container {
     font-family: "Inter", sans-serif;
@@ -132,24 +134,26 @@ nav {
     padding: 5px;
     background: rgba(245, 40, 145, 0.02);
 }
+
 .container h1 {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     justify-content: center;
 }
-/*  container petite icon avec photo */
-/* .container-articles {
-    height: 155px;
-    transform: translate3d(0px, 0px, 0px);
+.container p{
+    color: rgb(53, 51, 51);
 }
-.container-img {
-    display: block;
-    width: 50px;
-    height: 20px;
+@media  screen and (max-width: 500px) {
+    .container{
+        padding: 10px;
+    }
+    .bg-image{
+        width: 120%;
+        background-repeat: no-repeat;
+    }
+
 }
-.sac-dos {
-    width: 136px;
-} */
+/* Partie catégorie  */
 .categories {
     text-align: center;
     margin: 40px auto;
@@ -157,8 +161,7 @@ nav {
 }
 
 .categories h2 {
-    /* font-family: "Dancing Script", cursive; */
-    /* ou une autre fonte manuscrite */
+
     font-size: 2rem;
     font-weight: normal;
     margin-bottom: 30px;
@@ -169,6 +172,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    font-size: 8px;
 }
 
 .category-item {
@@ -186,8 +190,10 @@ nav {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.category-item p {
+.category-item a {
     margin-top: 10px;
     font-size: 0.9rem;
     font-weight: bold;
+    text-decoration: none;
+    color: rgb(76, 73, 73);
 }
