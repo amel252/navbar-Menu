@@ -17,5 +17,7 @@ window.addEventListener("scroll", () =>{
 })
 // dans cette function on veux diminuer l'opacity de notre Img
 function updateImage() {
-    bgImageEl.style.opacity = 1 - window.pageYOffset / 800
+    bgImageEl.style.opacity = 1 - window.pageYOffset / 900;
+    // dininuer le zoom level
+    bgImageEl.style.backgroundSize = 160 - window.pageYOffset / 12 + "%";
 }
